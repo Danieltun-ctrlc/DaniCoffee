@@ -72,7 +72,7 @@ const projectsData = [
 
     links: {
       github: "https://github.com/24041225-kae/CA2_C219",
-      live: null,
+      live: "https://monumental-gaufre-ed6370.netlify.app/",
     },
   },
   {
@@ -444,6 +444,81 @@ const projectsData = [
     links: {
       github: "https://github.com/Danieltun-ctrlc/mentalnovel",
       live: "https://Mentalnovel-v4.vercel.app",
+    },
+  },
+  {
+    id: "whispers-of-the-shrine",
+
+    title: "Whispers of the Shrine",
+    category: "Games",
+    tagline:
+      "Psychological VR escape room set in a surreal Japanese dreamscape",
+    image: "/assets/whispers.png",
+
+    problem:
+      "Traditional escape games often focus solely on logic puzzles, lacking emotional weight. The goal was to create an experience where the 'trap' is the protagonist's own mind—their stress, doubts, and regrets.",
+    solution:
+      "A first-person VR narrative where players navigate a distorted spiritual realm. Puzzles are not just obstacles but symbolic rituals that require the player to confront and release inner burdens to wake up.",
+
+    features: [
+      "Emotion-Driven Design: Puzzles symbolize struggles like anger and doubt, requiring introspection to solve.",
+      "Surreal Atmosphere: A hauntingly beautiful world modeling traditional Japanese shrines and gardens.",
+      "Ritualistic Interactions: Unique VR mechanics involving physical offerings and unlocking spiritual paths.",
+    ],
+
+    techStack: {
+      frontend: ["Unity", "XR Interaction Toolkit"],
+      backend: ["C#"],
+      tools: ["Blender", "Oculus/Meta Quest"],
+    },
+
+    myRole:
+      "Solo Developer. Created the concept art, designed the 'mind-palace' level layout, and programmed the interaction mechanics for the ritual-based puzzles.",
+    challenges:
+      "Balancing the surreal, dreamlike aesthetic with clear visual cues so players don't get lost while exploring the non-linear environment.",
+    learned:
+      "Learned how to use environmental storytelling and atmospheric sound design to guide player emotions without using heavy dialogue.",
+
+    links: {
+      github: null,
+      live: "https://youtu.be/699SQrNLBJw",
+    },
+  },
+  {
+    id: "oh-meme-generator",
+
+    title: "Open House Meme Generator",
+    category: "AI",
+    tagline: "AI-powered meme creation tool using Model Context Protocol (MCP)",
+    image: "/assets/oh_meme.jpg",
+
+    problem:
+      "Creating witty, relevant memes for events often involves juggling separate tools for templates, text editing, and creative brainstorming, which slows down production.",
+    solution:
+      "A unified dashboard built on the Model Context Protocol that integrates AI tools directly into the editor, allowing for smart caption generation, template remixing, and layered editing in one workflow.",
+
+    features: [
+      "AI Caption Assist: Uses MCP tools to generate punchy captions, tone tweaks, and variations instantly.",
+      "Layered Editor: Professional-grade drag/resize text tools with outline and placement adjustments.",
+      "Batch Mode: Generates multiple caption variants in a single click for rapid content testing.",
+    ],
+
+    techStack: {
+      frontend: ["React", "HTML5 Canvas"],
+      backend: ["Model Context Protocol (MCP)", "Node.js"],
+      tools: ["Git", "AI APIs"],
+    },
+
+    myRole:
+      "Full Stack Developer. Implemented the MCP client architecture to connect with AI tools and built the interactive canvas editor for real-time meme rendering.",
+    challenges:
+      "Successfully integrating the Model Context Protocol to handle asynchronous AI responses while keeping the visual editor responsive and lag-free.",
+    learned:
+      "Gained cutting-edge experience with MCP for tool-use agents and advanced state management for graphical editors.",
+
+    links: {
+      github: "https://github.com/Sweekwang/OH-Meme-dashboard",
+      live: null,
     },
   },
 ];

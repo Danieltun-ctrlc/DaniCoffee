@@ -79,14 +79,16 @@ const ProjectDetail = () => {
           paddingTop: "0",
         }}
       >
-        <a
-          href={project.links.github}
-          target="_blank"
-          rel="noreferrer"
-          className="link-btn"
-        >
-          GitHub Repo
-        </a>
+        {project.links.github && (
+          <a
+            href={project.links.github}
+            target="_blank"
+            rel="noreferrer"
+            className="link-btn"
+          >
+            Github Repo
+          </a>
+        )}
         {project.links.live && (
           <a
             href={project.links.live}

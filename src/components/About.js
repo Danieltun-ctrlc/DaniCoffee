@@ -18,35 +18,58 @@ const About = () => {
     { name: "Reading", img: "/assets/hobbies/reading.png" },
     { name: "Drone Soccer", img: "/assets/hobbies/drone.png" },
   ];
+  const playCoinSound = () => {
+    const audio = new Audio("/assets/sounds/coin.mp3");
+
+    audio.volume = 0.5;
+
+    audio.currentTime = 0;
+
+    audio.play().catch((error) => console.log("Audio play failed:", error));
+  };
 
   const certificates = [
     {
-      date: "2024-11",
-      title: "Google Cybersecurity Professional",
-      issuer: "Coursera / Google",
+      date: "2024-5",
+      title: "Agile Foundations",
+      issuer: "Doug Rose",
       status: "Verified",
-      link: "/assets/certs/google-cyber.pdf",
+      link: "/assets/certs/agile.pdf",
     },
     {
-      date: "2024-06",
-      title: "AWS Certified Cloud Practitioner",
-      issuer: "Amazon Web Services",
+      date: "2025-06",
+      title: "React (Basic) Certificate",
+      issuer: "HackerRank",
       status: "Verified",
-      link: "/assets/certs/aws-cloud.jpg",
+      link: "/assets/certs/react_basic.pdf",
     },
     {
-      date: "2023-12",
-      title: "Director’s Roll of Honour",
-      issuer: "Republic Polytechnic",
-      status: "Awarded",
-      link: "/assets/certs/director-roll.jpg",
+      date: "2025-08",
+      title: "Node.js Essential Training",
+      issuer: "LinkedIn Learning",
+      status: "Verified",
+      link: "/assets/certs/nodejs-essential.pdf",
     },
     {
-      date: "2023-08",
-      title: "Certified Ethical Hacker (Junior)",
-      issuer: "EC-Council",
+      date: "2025-07",
+      title: "Photoshop 2021 Quick Start",
+      issuer: "LinkedIn Learning",
       status: "Verified",
-      link: "/assets/certs/ceh-junior.pdf",
+      link: "/assets/certs/photoshop-2021.pdf",
+    },
+    {
+      date: "2025-07",
+      title: "JavaScript Web Form Programming",
+      issuer: "LinkedIn Learning",
+      status: "Verified",
+      link: "/assets/certs/js-web-forms.pdf",
+    },
+    {
+      date: "2025-06",
+      title: "JavaScript Enhancing the DOM",
+      issuer: "LinkedIn Learning",
+      status: "Verified",
+      link: "/assets/certs/js-dom.pdf",
     },
   ];
 
@@ -255,7 +278,12 @@ const About = () => {
                 </h3>
                 <div className="social-stats-grid">
                   {socialStats.map((stat, index) => (
-                    <div key={index} className="stat-coin-slot">
+                    <div
+                      key={index}
+                      className="stat-coin-slot"
+                      onClick={playCoinSound}
+                      style={{ cursor: "pointer" }}
+                    >
                       <img
                         src={`/assets/coins/${stat.name.toLowerCase()}_coin.png`}
                         alt={stat.name}

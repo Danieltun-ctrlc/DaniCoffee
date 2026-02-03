@@ -243,7 +243,7 @@ const Achievements = () => {
             Hall of Fame
           </h2>
           <p style={{ color: "var(--text-secondary)" }}>
-            @myothettun_achievements
+            @myothettun_achievements_activities
           </p>
         </FadeInSection>
       </div>

@@ -795,6 +795,15 @@
 .cert-item:nth-child(10) {
   animation-delay: 1s;
 }
+.stat-coin-slot {
+  /* ... your existing styles ... */
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.stat-coin-slot:active {
+  transform: scale(0.95); /* Shrinks slightly when clicked */
+}
 
 @keyframes slideInRight {
   from {
@@ -810,7 +819,5 @@
 .cert-item:hover {
   background: rgba(255, 255, 255, 0.08);
   border-left-color: var(--highlight);
-  transform: translateX(3px); /* Small nudge interaction */
+  transform: translateX(3px);
 }
-
-/* ... (Rest of CSS) ... */
