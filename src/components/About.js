@@ -261,7 +261,11 @@ const About = () => {
                   <span className="bio-highlight">side projects</span> just to
                   see if I can. Whether it's experimenting with a new framework
                   or hacking together a tool to solve a random problem, I am
-                  always building something new.
+                  always building something new and
+                  <span className="bio-highlight">
+                    {" "}
+                    interested in participating various hackathons.
+                  </span>
                 </p>
 
                 <p className="bio-text">

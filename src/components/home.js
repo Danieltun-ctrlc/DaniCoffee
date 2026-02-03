@@ -56,17 +56,20 @@ const Home = () => {
               </div>
 
               <div className="social-row">
-                <a href="#git" className="social-item">
+                <a
+                  href="https://github.com/Danieltun-ctrlc"
+                  className="social-item"
+                >
                   GitHub
                 </a>
                 <span className="separator">|</span>
-                <a href="#link" className="social-item">
+                <a
+                  href="https://www.linkedin.com/in/myo-thet-tun-8a8bb430b/"
+                  className="social-item"
+                >
                   LinkedIn
                 </a>
-                <span className="separator">|</span>
-                <a href="#x" className="social-item">
-                  X
-                </a>
+
                 <span className="separator">|</span>
                 <a href="/about" className="social-item">
                   More →
