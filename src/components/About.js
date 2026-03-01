@@ -110,7 +110,7 @@ const About = () => {
                 Myo Thet Tun
               </h2>
               <p style={{ color: "var(--text-secondary)", fontSize: "0.9rem" }}>
-                Full Stack Developer
+                Software Developer
               </p>
 
               <div className="char-stats">
