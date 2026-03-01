@@ -116,7 +116,7 @@ const About = () => {
               <div className="char-stats">
                 <div className="stat-row">
                   <span className="stat-label">LVL (Age)</span>
-                  <span className="stat-value">19</span>
+                  <span className="stat-value">20 (March 1st)</span>
                 </div>
                 <div className="stat-row">
                   <span className="stat-label">Location</span>
